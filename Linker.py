@@ -12,7 +12,7 @@ import urllib.error
 import collections
 from abc import abstractmethod
 
-
+# Define Windows NTSTATUS
 class NTSTATUS:
     __slots__ = ("value",)
 
@@ -39,11 +39,12 @@ class NTSTATUS:
     def __str__(self):
         return hex(self.value)
 
-
+# Reference Windows NTSTATUS
 STATUS_SUCCESS = NTSTATUS(0x00000000)
 STATUS_UNSUCCESSFUL = NTSTATUS(0xC0000001)
 STATUS_ACCESS_DENIED = NTSTATUS(0xC0000022)
 
+# Offsets
 OFFSET_PEB = 0x00000060
 OFFSET_TEB = 0x00000030
 OFFSET_PEB_LDR = 0x00000018
@@ -154,6 +155,7 @@ class ComponentBase(metaclass=MetaRegistry):
     _abstract = True
 
 
+# UserAgent Pool
 class UserAgentPool(metaclass=SingletonMeta):
     __slots__ = ("agents",)
 
@@ -177,6 +179,7 @@ class UserAgentPool(metaclass=SingletonMeta):
         return list(self.agents)
 
 
+# Build Get Headers
 class HeaderBuilder(ComponentBase):
     __slots__ = ("headers",)
     _abstract = False
@@ -195,6 +198,7 @@ class HeaderBuilder(ComponentBase):
         return dict(self.headers)
 
 
+# HTTP Client
 class HttpClient(ComponentBase):
     __slots__ = ("timeout", "builder")
     _abstract = False
@@ -231,6 +235,7 @@ class HttpClient(ComponentBase):
             return None, STATUS_UNSUCCESSFUL
 
 
+# Search Engine Bing and Baidu.
 class SearchEngineBase(ComponentBase):
     __slots__ = ("http",)
     _abstract = True
@@ -265,6 +270,7 @@ class BaiduEngine(SearchEngineBase):
         return "https://www.baidu.com/s?wd=" + urllib.parse.quote_plus(keyword)
 
 
+# Collect URLs in internet
 class URLCollector(ComponentBase):
     __slots__ = ("dedup", "keyword", "limit")
     _abstract = False
@@ -376,6 +382,7 @@ class LinkerFetcher(ComponentBase):
         return pages
 
 
+# Parser
 class LinkerParser(ComponentBase):
     __slots__ = ("extractor", "cleaner", "normalizer")
     _abstract = False
@@ -480,7 +487,7 @@ class LinkerRunner(ComponentBase):
             "collected": self.context.collector.size(),
         }
 
-
+# Console
 class LinkerConsole(ComponentBase):
     __slots__ = ()
     _abstract = False
@@ -503,7 +510,7 @@ class LinkerConsole(ComponentBase):
         sys.stdout.write("\n")
         sys.stdout.flush()
 
-
+# Entry
 class LinkerEntry(ComponentBase):
     __slots__ = ("runner", "console", "status")
     _abstract = False
@@ -557,7 +564,7 @@ class LinkerApplication(ComponentBase):
     def run(self):
         return self.entry.invoke()
 
-
+# Main
 def main():
     application = LinkerApplication()
     status = application.run()
