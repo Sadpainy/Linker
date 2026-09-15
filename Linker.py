@@ -44,7 +44,6 @@ STATUS_SUCCESS = NTSTATUS(0x00000000)
 STATUS_UNSUCCESSFUL = NTSTATUS(0xC0000001)
 STATUS_ACCESS_DENIED = NTSTATUS(0xC0000022)
 
-
 class MetaRegistry(type):
     __slots__ = ()
     _registry = collections.OrderedDict()
