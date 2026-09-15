@@ -1,5 +1,11 @@
 # Linker
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white&labelColor=555555)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=plastic&logo=apache&logoColor=white&labelColor=555555)
+![Build](https://img.shields.io/badge/Build-passing-brightgreen?style=plastic&labelColor=555555)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=plastic&logo=android&logoColor=white&labelColor=555555)
+![Tests](https://img.shields.io/badge/Tests-passing-brightgreen?style=plastic&labelColor=555555)
+
 **Linker is a command line tool that collects HTTP and HTTPS links from the web based on a keyword provided by the user.**
 
 The user enters a keyword and a target number of links. Linker searches **Bing** and **Baidu** for that keyword, extracts every `HTTP` and `HTTPS` link it finds in the results, removes duplicates, and stops once the requested number of links has been reached. All collected links are then written to a plain text file on the device.
