@@ -64,7 +64,9 @@ STATUS_SUCCESS
 **Step 8**
 Open the output file to view the collected links.
 
-`/storage/emulated/0/MT2/URL.txt`
+```bash
+/storage/emulated/0/MT2/URL.txt
+```
 
 # Output
 
