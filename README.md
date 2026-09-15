@@ -1,6 +1,6 @@
 # Linker
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white&labelColor=555555)
+![Python](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=plastic&logo=apache&logoColor=white&labelColor=555555)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen?style=plastic&labelColor=555555)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=plastic&logo=android&logoColor=white&labelColor=555555)
