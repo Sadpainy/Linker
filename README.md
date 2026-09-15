@@ -17,7 +17,7 @@ The user enters a keyword and a target number of links. Linker searches **Bing**
 **Step 1**
 Install Termux on your Android device.
 
-`Links: https://termux.dev`
+`Links: https://f-droid.org/en/packages/com.termux`
 
 **Step 2**
 Open Termux and run the following command once to grant storage access.
