@@ -31,6 +31,8 @@ Get Linker.
 
 ```bash
 git clone https://github.com/Sadpainy/Linker
+cd Linker
+/Linker $
 ```
 
 **Step 4**
