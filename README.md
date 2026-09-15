@@ -17,6 +17,8 @@ The user enters a keyword and a target number of links. Linker searches **Bing**
 **Step 1**
 Install Termux on your Android device.
 
+`Links: https://termux.dev`
+
 **Step 2**
 Open Termux and run the following command once to grant storage access.
 
@@ -25,7 +27,11 @@ termux-setup-storage
 ```
 
 **Step 3**
-Save the Linker script to your Termux home directory.
+Get Linker.
+
+```bash
+git clone https://github.com/Sadpainy/Linker
+```
 
 **Step 4**
 Run the script with Python.
@@ -37,11 +43,23 @@ python3 Linker.py
 **Step 5**
 When prompted, enter the keyword you want to search for.
 
+```Python
+keyword: Word
+```
+
 **Step 6**
 When prompted, enter the number of links you want to collect.
 
+```Python
+Count:
+```
+
 **Step 7**
 Wait for Linker to finish. Progress and the final status are printed on the screen.
+
+```Python
+STATUS_SUCCESS
+```
 
 **Step 8**
 Open the output file to view the collected links.
