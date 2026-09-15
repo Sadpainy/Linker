@@ -46,6 +46,9 @@ Open the output file to view the collected links.
 
 The result is a plain text file named **URL.txt** located in the `/storage/emulated/0/MT2` folder on your device storage. Each line contains one unique `HTTP` or `HTTPS` link.
 
+# License
+**Apache License 2.0**
+
 # Notes
 
 Linker only collects `HTTP` and `HTTPS` links. It does not download any content. It does not follow links beyond the search result pages. Duplicate links are removed automatically. The number of collected links never exceeds the value entered by the user.
