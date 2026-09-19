@@ -17,7 +17,7 @@ The user enters a keyword and a target number of links. Linker searches **Bing**
 **Step 1**
 Install **Termux** and **MT Manager** on your Android device.
 
-```Bash
+```Python
 https://f-droid.org/en/packages/com.termux
 https://mt.cc/download/
 ```
@@ -25,7 +25,7 @@ https://mt.cc/download/
 **Step 2**
 Open Termux and run the following command once to grant storage access.
 
-```Linux
+```Bash
 ~ $ termux-setup-storage
 
 It appears that directory '~/storage' already exists.
