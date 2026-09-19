@@ -49,7 +49,7 @@ python3 Linker.py
 When prompted, enter the keyword you want to search for.
 
 ```Python
-keyword: Word
+keyword:
 ```
 
 **Step 6**
