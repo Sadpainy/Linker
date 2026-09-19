@@ -17,7 +17,7 @@ The user enters a keyword and a target number of links. Linker searches **Bing**
 **Step 1**
 Install **Termux** and **MT Manager** on your Android device.
 
-```Python
+```
 https://f-droid.org/en/packages/com.termux
 https://mt.cc/download/
 ```
