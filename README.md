@@ -18,7 +18,7 @@ The user enters a keyword and a target number of links. Linker searches **Bing**
 Install Termux on your Android device.
 
 ```Bash
-Links: https://f-droid.org/en/packages/com.termux
+https://f-droid.org/en/packages/com.termux
 ```
 
 **Step 2**
