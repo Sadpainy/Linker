@@ -15,11 +15,11 @@ The user enters a keyword and a target number of links. Linker searches **Bing**
 # How to Run
 
 **Step 1**
-Install Termux and MT Manager on your Android device.
+Install **Termux** and **MT Manager** on your Android device.
 
 ```Bash
 https://f-droid.org/en/packages/com.termux
-https://mt.cc
+https://mt.cc/download/
 ```
 
 **Step 2**
