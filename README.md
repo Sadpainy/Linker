@@ -25,7 +25,7 @@ https://mt.cc/download/
 **Step 2**
 Open Termux and run the following command once to grant storage access.
 
-```bash
+```Linux
 ~ $ termux-setup-storage
 
 It appears that directory '~/storage' already exists.
