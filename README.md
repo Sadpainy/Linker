@@ -26,7 +26,15 @@ https://mt.cc/download/
 Open Termux and run the following command once to grant storage access.
 
 ```bash
-termux-setup-storage
+~ $ termux-setup-storage
+
+It appears that directory '~/storage' already exists.
+This script is going to rebuild its structure from
+scratch, wiping all dangling files. The actual storage
+content IS NOT going to be deleted.
+
+Do you want to continue? (y/n) y
+~ $
 ```
 
 **Step 3**
